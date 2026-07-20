@@ -780,6 +780,7 @@ section{
         padding:25px 0;
         display:none;
         box-shadow:0 10px 30px rgba(0,0,0,.1);
+      
 
     }
 
@@ -789,4 +790,72 @@ section{
 
     }
 
+}
+/* ===========================
+   SMOOTH ANIMATIONS
+=========================== */
+
+html{
+    scroll-behavior:smooth;
+}
+
+.service-card,
+.why-card,
+.cake-card,
+.gallery-container img,
+.btn,
+.btn-outline{
+    transition:all .4s ease;
+}
+
+.service-card:hover,
+.why-card:hover{
+    transform:translateY(-12px);
+}
+
+.gallery-container img:hover{
+    transform:scale(1.06) rotate(.5deg);
+}
+
+.hero-text h1,
+.hero-text p,
+.hero-buttons{
+    animation:fadeUp 1s ease forwards;
+}
+
+.hero-image img{
+    animation:float 4s ease-in-out infinite;
+}
+
+@keyframes fadeUp{
+
+    from{
+        opacity:0;
+        transform:translateY(40px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+
+}
+
+/* Beautiful Scrollbar */
+
+::-webkit-scrollbar{
+    width:10px;
+}
+
+::-webkit-scrollbar-track{
+    background:#f3f3f3;
+}
+
+::-webkit-scrollbar-thumb{
+    background:#e91e63;
+    border-radius:20px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background:#c2185b;
 }
