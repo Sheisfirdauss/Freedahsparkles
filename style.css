@@ -744,3 +744,49 @@ header{
     }
 
       }
+/* ===========================
+   JAVASCRIPT ANIMATIONS
+=========================== */
+
+.sticky{
+    background:#ffffff;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+}
+
+section{
+    opacity:0;
+    transform:translateY(60px);
+    transition:1s;
+}
+
+.show-section{
+    opacity:1;
+    transform:translateY(0);
+}
+
+/* Mobile Menu */
+
+@media(max-width:991px){
+
+    .nav-links{
+
+        position:absolute;
+        top:85px;
+        left:0;
+        width:100%;
+        background:#fff;
+        flex-direction:column;
+        text-align:center;
+        padding:25px 0;
+        display:none;
+        box-shadow:0 10px 30px rgba(0,0,0,.1);
+
+    }
+
+    .nav-links.show{
+
+        display:flex;
+
+    }
+
+}
