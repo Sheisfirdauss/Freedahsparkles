@@ -859,3 +859,70 @@ html{
 ::-webkit-scrollbar-thumb:hover{
     background:#c2185b;
 }
+/* CONTACT */
+
+.contact-container{
+
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(350px,1fr));
+gap:50px;
+margin-top:50px;
+
+}
+
+.contact-info h3{
+
+font-family:'Playfair Display',serif;
+font-size:32px;
+margin-bottom:20px;
+
+}
+
+.contact-info p{
+
+line-height:1.8;
+margin-bottom:15px;
+color:#666;
+
+}
+
+.contact-info i{
+
+color:#e91e63;
+margin-right:10px;
+
+}
+
+.contact-form form{
+
+display:flex;
+flex-direction:column;
+gap:20px;
+
+}
+
+.contact-form input,
+.contact-form textarea{
+
+padding:16px;
+border:1px solid #ddd;
+border-radius:10px;
+font-family:'Poppins',sans-serif;
+font-size:16px;
+
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus{
+
+outline:none;
+border-color:#e91e63;
+
+}
+
+.contact-form button{
+
+border:none;
+cursor:pointer;
+
+}
